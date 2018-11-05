@@ -1,53 +1,71 @@
 <!DOCTYPE html>
-<html lang="fr">
-	<head>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<!-- Compiled and minified CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-		<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" />
+<html lang="fr" ng-app="coreApp">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.1/css/materialize.min.css">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" />
-  	<link type="text/css" rel="stylesheet" href="main.css" />
+    <link type="text/css" rel="stylesheet" href="main.css" />
     <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css" /> -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous" />
-		<link rel="shortcut icon" href="" />
-		<title>WOK UP - Votre restaurant Thaï</title>
+        <title>WOK UP</title>
+            <meta charset="utf-8" />
   </head>
-  <body>
-
-  <div class="carousel carousel-slider">
-    <a class="carousel-item" href="#one!"><img src="https://lorempixel.com/800/400/food/1"></a>
-    <a class="carousel-item" href="#two!"><img src="https://lorempixel.com/800/400/food/2"></a>
-    <a class="carousel-item" href="#three!"><img src="https://lorempixel.com/800/400/food/3"></a>
-    <a class="carousel-item" href="#four!"><img src="https://lorempixel.com/800/400/food/4"></a>
-  </div>
-
-		<!-- PRESENTATION -->
-
-		<!-- FIN PRESENTATION -->
+  <body ng-controller="homeCtrl">
+        <!-- PRESENTATION -->
+        <!-- FIN PRESENTATION -->
     <!-- NAVBAR -->
-		<header>
+        <header>
 
-		</header>
+  <nav>
+    <div class="nav-wrapper">
+      <a href="#" class="brand-logo">Logo</a>
+      <ul id="nav-mobile" class="right hide-on-med-and-down">
+        <li><a href="sass.html">Sass</a></li>
+        <li><a href="badges.html">Components</a></li>
+        <li><a href="collapsible.html">JavaScript</a></li>
+      </ul>
+    </div>
+  </nav>
+
+        </header>
+        <div class="center crsl white-text" carousel>
+                <div class="carousel-item red">
+                    <h2>First Panel</h2>
+            <p class="white-text">This is your first panel</p>
+                    <button class="btn waves-effect waves-light btn-small">Button</button>
+                </div>
+                <div class="carousel-item blue">
+                    <h2>Second Panel</h2>
+            <p class="white-text">This is your second panel</p>
+                    <button class="btn waves-effect waves-light btn-small">Button</button>
+                </div>
+                <div class="carousel-item green">
+                    <h2>Third Panel</h2>
+            <p class="white-text">This is your third panel</p>
+                    <button class="btn waves-effect waves-light btn-small">Button</button>
+                </div>
+        </div>
+
     <!-- FIN NAVBAR -->
     <!-- BOUTIQUE -->
-		<div class="container">
+        <div class="container">
 
-		</div>
+        </div>
     <!-- FIN BOUTIQUE -->
     <!-- PANIER -->
 
     <!-- FIN PANIER -->
     <!-- FOOTER / MENTIONS LEGALES -->
-		<footer>
+        <footer>
 
-		</footer>
-    <!-- FIN FOOTER / MENTIONS LEGALES -->
-		<script type="text/javascript" src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
-	    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular.min.js"></script>
-	    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.1/js/materialize.min.js"></script>
-	    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular-materialize/0.2.2/angular-materialize.min.js"></script>
-			<script type="text/javascript" src="js.js"></script>
+        </footer>
+        <script type="text/javascript" src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.1/js/materialize.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular-materialize/0.2.2/angular-materialize.min.js"></script>
+    <script src="js.js"></script>
   </body>
 </html>
