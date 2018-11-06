@@ -2,70 +2,188 @@
 <html lang="fr" ng-app="coreApp">
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <!-- Compiled and minified CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.1/css/materialize.min.css">
-        <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" />
     <link type="text/css" rel="stylesheet" href="main.css" />
     <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css" /> -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous" />
-        <title>WOK UP</title>
+        <title>WOK UP - Votre restaurant Thaï</title>
             <meta charset="utf-8" />
   </head>
-  <body ng-controller="homeCtrl">
+  <body class="bodycolor" ng-controller="homeCtrl">
         <!-- PRESENTATION -->
         <!-- FIN PRESENTATION -->
-    <!-- NAVBAR -->
-        <header>
+        <!-- NAVBAR -->
+        <!-- FIN NAVBAR -->
 
-  <nav>
-    <div class="nav-wrapper">
-      <a href="#" class="brand-logo">Logo</a>
-      <ul id="nav-mobile" class="right hide-on-med-and-down">
-        <li><a href="sass.html">Sass</a></li>
-        <li><a href="badges.html">Components</a></li>
-        <li><a href="collapsible.html">JavaScript</a></li>
-      </ul>
-    </div>
-  </nav>
+        <!-- CAROUSEL -->
 
-        </header>
-        <div class="center crsl white-text" carousel>
-                <div class="carousel-item red">
-                    <h2>First Panel</h2>
-            <p class="white-text">This is your first panel</p>
-                    <button class="btn waves-effect waves-light btn-small">Button</button>
-                </div>
-                <div class="carousel-item blue">
-                    <h2>Second Panel</h2>
-            <p class="white-text">This is your second panel</p>
-                    <button class="btn waves-effect waves-light btn-small">Button</button>
-                </div>
-                <div class="carousel-item green">
-                    <h2>Third Panel</h2>
-            <p class="white-text">This is your third panel</p>
-                    <button class="btn waves-effect waves-light btn-small">Button</button>
-                </div>
-        </div>
+				<div id="demo" class="carousel slide carousel-fade" data-ride="carousel">
 
-    <!-- FIN NAVBAR -->
-    <!-- BOUTIQUE -->
-        <div class="container">
+		  <!-- Indicators -->
+		  <ul class="carousel-indicators">
+		    <li data-target="#demo" data-slide-to="0" class="active"></li>
+		    <li data-target="#demo" data-slide-to="1"></li>
+		    <li data-target="#demo" data-slide-to="2"></li>
+		  </ul>
 
-        </div>
-    <!-- FIN BOUTIQUE -->
+		  <!-- The slideshow -->
+		  <div class="carousel-inner">
+		    <div class="carousel-item active">
+		      <img src="/home/julienf/WokUpProject/assets/imgCarousel1.png" alt="Los Angeles" width="100%">
+		    </div>
+		    <div class="carousel-item">
+		      <img src="/home/julienf/WokUpProject/assets/imgCarousel2.png" alt="Chicago" width="100%">
+		    </div>
+		    <div class="carousel-item">
+		      <img src="/home/julienf/WokUpProject/assets/imgCarousel3.png" alt="New York" width="100%">
+		    </div>
+		  </div>
+		  <!-- Left and right controls -->
+		  <a class="carousel-control-prev" href="#demo" data-slide="prev">
+		    <span class="carousel-control-prev-icon"></span>
+		  </a>
+		  <a class="carousel-control-next" href="#demo" data-slide="next">
+		    <span class="carousel-control-next-icon"></span>
+		  </a>
+
+		</div>
+
+    <!-- FIN CAROUSEL -->
+
+    <!-- BODY -->
+
+    <!-- Début Cards -->
+		<div class="container-fluid card-group topborder">
+
+		<div class="card sizecards col-md-4 col-12 bordright">
+		  <img class="card-img-top" src="https://www.w3schools.com/bootstrap4/img_avatar1.png" alt="Card image">
+		  <div class="card-body">
+		    <h4 class="card-title">Classic Box</h4>
+		    <p class="card-text">Entrée au choix - Riz Thaï / Riz nature.</p>
+		    <a href="#" class="btn btncolor">Commander !</a>
+		  </div>
+		</div>
+
+		<div class="card sizecards col-md-4 col-12 bordright">
+		  <img class="card-img-top" src="https://www.w3schools.com/bootstrap4/img_avatar1.png" alt="Card image">
+		  <div class="card-body">
+		    <h4 class="card-title">Pad Thaï</h4>
+		    <p class="card-text">Sauté de vermicelle de riz, oeuf, soja, émincé de crevettes ou de poulet
+        et cacahuètes.</p>
+		    <a href="#" class="btn btncolor">Commander !</a>
+		  </div>
+		</div>
+
+		<div class="card sizecards col-md-4 col-12">
+		  <img class="card-img-top" src="https://www.w3schools.com/bootstrap4/img_avatar1.png" alt="Card image">
+		  <div class="card-body">
+		    <h4 class="card-title">Veggie's Box</h4>
+		    <p class="card-text">Trois légumes au choix, accompagnement au choix, sauce au choix.</p>
+		    <a href="#" class="btn btncolor">Commander !</a>
+		  </div>
+		</div>
+
+		</div>
+
+    <div class="container-fluid card-group topbordcard">
+
+    <div class="card sizecards col-md-4 col-12 bordright">
+		  <img class="card-img-top" src="https://www.w3schools.com/bootstrap4/img_avatar1.png" alt="Card image">
+		  <div class="card-body">
+		    <h4 class="card-title">Veggie's Box</h4>
+		    <p class="card-text">Trois légumes au choix, accompagnement au choix, sauce au choix.</p>
+		    <a href="#" class="btn btncolor">Commander !</a>
+		  </div>
+		</div>
+
+    <div class="card sizecards col-md-4 col-12 bordright">
+		  <img class="card-img-top" src="https://www.w3schools.com/bootstrap4/img_avatar1.png" alt="Card image">
+		  <div class="card-body">
+		    <h4 class="card-title">Veggie's Box</h4>
+		    <p class="card-text">Trois légumes au choix, accompagnement au choix, sauce au choix.</p>
+		    <a href="#" class="btn btncolor">Commander !</a>
+		  </div>
+		</div>
+
+    <div class="card sizecards col-md-4 col-12">
+		  <img class="card-img-top" src="https://www.w3schools.com/bootstrap4/img_avatar1.png" alt="Card image">
+		  <div class="card-body">
+		    <h4 class="card-title">Veggie's Box</h4>
+		    <p class="card-text">Trois légumes au choix, accompagnement au choix, sauce au choix.</p>
+		    <a href="#" class="btn btncolor">Commander !</a>
+		  </div>
+		</div>
+
+  </div>
+  <!-- Fin cards -->
+
+    <!-- FIN BODY -->
     <!-- PANIER -->
 
     <!-- FIN PANIER -->
     <!-- FOOTER / MENTIONS LEGALES -->
-        <footer>
+    <footer class="footer topborder">
+      <div class="container bottom_border">
+        <div class="row">
+          <div class=" col-sm-4 col-md col-sm-4  col-12 col">
+            <h5 class="headin5_amrc col_white_amrc pt2">Infos et contact</h5>
 
-        </footer>
-        <script type="text/javascript" src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+            <p class="mb10">Wok up, votre restaurant Thaï situé en centre ville du Havre !
+            </p>
+            <p><i class="fa fa-location-arrow"></i> 61 rue du Maréchal Galliéni 76600 Le Havre</p>
+            <p><i class="fa fa-phone"></i>  09 81 22 79 02  </p>
+            <p><i class="fa fa fa-envelope"></i> wokup01@gmail.com  </p>
+
+
+          </div>
+
+          <div class="col-sm-4 col-md col-12 col">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2591.3574602029394!2d0.109755450730924!3d49.496643263407286!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e02f1832ce1d95%3A0x5288c998bf88ba65!2s61+Rue+Mar%C3%A9chal+Gallieni%2C+76600+Le+Havre!5e0!3m2!1sfr!2sfr!4v1541497386582" width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+          </div>
+
+          <div class=" col-sm-4 col-md  col-12 col">
+            <h5 class="headin5_amrc col_white_amrc pt2">Menus</h5>
+
+
+            <ul class="footer_ul2_amrc">
+              <li><a href="#">Formules Classiques</a></li>
+              <li><a href="#">Formules Custom</a></li>
+
+            </ul>
+
+          </div>
+        </div>
+      </div>
+
+
+      <div class="container">
+        <ul class="foote_bottom_ul_amrc">
+          <li><a href="#">Acceuil</a></li>
+          <li><a href="#">Panier</a></li>
+          <li><a href="#">Menus</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+        <!--foote_bottom_ul_amrc ends here-->
+        <p class="text-center">Copyright @2018 | Designed With <span class="fas fa-heart"></span></i> by Laeticia, Laura, Medhi, Julien </p>
+
+        <ul class="social_footer_ul">
+          <li><a href="https://www.facebook.com/WOK-UP-1498670560416702/"><i class="fab fa-facebook-f"></i></a></li>
+          <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+        </ul>
+        <!--social_footer_ul ends here-->
+      </div>
+
+    </footer>
+
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular.min.js"></script>
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.1/js/materialize.min.js"></script>
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular-materialize/0.2.2/angular-materialize.min.js"></script>
+		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
     <script src="js.js"></script>
   </body>
 </html>
